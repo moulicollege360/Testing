@@ -6,6 +6,7 @@ phases:
     commands:
       - echo install serverless framework
       - npm install -g serverless
+      - npm install
   pre_build:
     commands:
       - echo install pre build commands
@@ -13,7 +14,6 @@ phases:
     commands:
       - echo deployment started `date`
       - echo deploy serverless framework custom codebase
-      - npm install
   post_build:
     commands:
       - echo post build completed on `date`
