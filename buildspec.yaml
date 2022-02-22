@@ -5,6 +5,7 @@ phases:
   install:
     commands:
       - echo install serverless framework
+      - apt-get install nodejs
       - npm install -g serverless
       - npm install
   pre_build:
