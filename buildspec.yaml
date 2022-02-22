@@ -20,5 +20,5 @@ phases:
     commands:
       - echo post build completed on `date`
   artifacts:
-  files:
+    files:
     - target/deploy.zip
