@@ -4,12 +4,12 @@ version: 0.2
 phases:
   install:
       runtime-versions:
-      nodejs: 16.14.0
+       nodejs: 16.14.0
       commands:
-      - echo install serverless framework
-      - apt-get install nodejs
-      - npm install -g serverless
-      - npm install
+       - echo install serverless framework
+       - apt-get install nodejs
+       - npm install -g serverless
+       - npm install
   pre_build:
     commands:
       - echo install pre build commands
