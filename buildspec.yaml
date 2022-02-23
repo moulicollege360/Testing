@@ -16,9 +16,9 @@ phases:
       - echo deployment started `date`
       - echo deploy serverless framework custom codebase
       - npm install
-  post_build:
-    commands:
-      - echo post build completed on `date`
 artifacts:
    files:
     - '**/*'
+post_build:
+   commands:
+      - echo post build completed on `date`
