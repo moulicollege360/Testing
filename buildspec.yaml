@@ -21,4 +21,4 @@ phases:
       - echo post build completed on `date`
 artifacts:
    files:
-    - target/deploy.zip
+    - '**/*'
