@@ -16,6 +16,7 @@ phases:
       - echo deployment started `date`
       - echo deploy serverless framework custom codebase
       - npm install
+      - npm run test
 artifacts:
    files:
     - '**/*'
