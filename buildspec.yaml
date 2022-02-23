@@ -19,6 +19,8 @@ phases:
 artifacts:
    files:
     - '**/*'
+   discard-paths: no
+   base-directory: build
 post_build:
    commands:
       - echo post build completed on `date`
