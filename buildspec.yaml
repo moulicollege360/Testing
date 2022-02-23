@@ -7,7 +7,7 @@ phases:
        nodejs: 14
       commands:
        - echo install serverless framework
-       - npm install -g serverless
+       #- npm install -g serverless
   pre_build:
     commands:
       - echo install pre build commands
