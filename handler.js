@@ -15,6 +15,6 @@ module.exports.helloworld = async (event,context,callback) => {
 callback(null,response)
 };
 function printHelloWorld(){
-  return "Hello World to mouli";
+  return "Hello World";
 }
 module.exports.printHelloWorld=printHelloWorld;
