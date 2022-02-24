@@ -6,20 +6,21 @@ phases:
       runtime-versions:
        nodejs: 14
       commands:
-       - echo install serverless framework
-       #- npm install -g serverless
+       - echo installing serverless framework
+       - npm install -g serverless
   pre_build:
     commands:
       - echo install pre build commands
   build:
     commands:
-      - echo deployment started `date`
-      - echo deploy serverless framework custom codebase
+      - echo Installing NPM Packages
       - npm install
+      -echo Running tests
       - npm run test
+  post_build:
+    commands:
+      - echo post build completed on `date`
 artifacts:
    files:
     - '**/*'
-post_build:
-   commands:
-      - echo post build completed on `date`
+
