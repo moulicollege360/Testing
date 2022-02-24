@@ -19,7 +19,7 @@ phases:
       - npm run test
   post_build:
     commands:
-      - echo post build completed on `date`
+      - echo Entering Post_Build Phase
 artifacts:
    files:
     - '**/*'
