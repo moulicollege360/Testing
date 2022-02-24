@@ -15,7 +15,7 @@ phases:
     commands:
       - echo Installing NPM Packages
       - npm install
-      -echo Running tests
+      - echo Running tests
       - npm run test
   post_build:
     commands:
